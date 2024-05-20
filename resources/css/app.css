@@ -1,0 +1,23 @@
+/* Estilos para el tooltip */
+.tooltip-container {
+    position: relative; /* Posición relativa para los elementos internos */
+}
+
+.tooltip-content-bottom {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Posición absoluta en relación al contenedor */
+    top: calc(100% + 4px); /* Ajusta la distancia desde la parte superior */
+    transform: translateX(-40%); /* Centra horizontalmente */
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    min-width: 120px;
+    max-width: 200px;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+.show-tooltip{
+    display: block; /* Muestra el contenido */
+}
